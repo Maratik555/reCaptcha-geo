@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reCaptcha and geo</title>
+	<link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+
+</head>
+<body>
+<div class="main">
+	<div class="container">
+		<h1>Demo location</h1>
+		<button class="button-success" id="getLocation">Get Location</button>
+		<a target="_blank" id="locationDisplay">Show Location</a>
+		<div class="row">
+			<div class="col col-lg-4 col-lg-offset-4">
+				<h1>Demo reCaptcha</h1>
+				<form action="" id="sing-form" method="post">
+					<div class="form-control">
+						<label for="input">Email</label>
+						<input type="email" value="amr@mail.ru" id="input">
+					</div>
+					<div class="form-control">
+						<label for="pass">Pass</label>
+						<input type="password" value="12345" id="pass">
+					</div>
+					<div class="form-control">
+						<button class="button-success">Send</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
