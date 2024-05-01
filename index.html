@@ -15,14 +15,19 @@
 		<div class="row">
 			<div class="col col-lg-4 col-lg-offset-4">
 				<h1>Demo reCaptcha</h1>
-				<form action="" id="sing-form" method="post">
+				<form action="http://127.0.0.1:3000" id="sing-form" method="post">
 					<div class="form-control">
 						<label for="input">Email</label>
-						<input type="email" value="amr@mail.ru" id="input">
+						<input type="email" value="amr@mail.ru" id="input" name="email">
 					</div>
 					<div class="form-control">
 						<label for="pass">Pass</label>
-						<input type="password" value="12345" id="pass">
+						<input type="password" value="12345" id="pass" name="password">
+					</div>
+					<div class="form-control">
+						<div class="g-recaptcha" data-sitekey="6LeaYs0pAAAAADJvh_iGNNG0k-AK7TC7rG_GbxQk"></div>
+						<br/>
+					<div class="text-danger" id="recaptchaError"></div>
 					</div>
 					<div class="form-control">
 						<button class="button-success">Send</button>
@@ -33,6 +38,7 @@
 		</div>
 	</div>
 </div>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="main.js"></script>
 </body>
 </html>
